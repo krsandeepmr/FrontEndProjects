@@ -117,3 +117,26 @@ padding-bottom: 20px;
 	margin: 0 auto;
 	max-width: 800px;
 }
+
+/***********
+*   States
+***************/
+
+.is-liked {
+	animation: flash 1.5s;
+}
+
+
+
+/***********
+*   Animation
+***************/
+
+@keyframes flash {
+	from, 50%, to {
+		opacity: 0.5;
+	},
+	25%, 75% {
+		opacity: 1;
+	}
+}
