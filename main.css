@@ -17,7 +17,7 @@
 *********************/
 
 body {
- background-color: grey;
+ 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -29,7 +29,9 @@ p {
 }
 
 ol {
-
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 li {
@@ -55,6 +57,7 @@ Header Section styling
 	color:#fff;
 	text-align: center;
 	padding:40px 0;
+	margin-bottom: 40px;
 }
 
 /*********
@@ -67,4 +70,28 @@ Header Section styling
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: bolder;
+}
+
+/***********
+*   News
+***************/
+
+.news-item {
+border-bottom: 1px solid #b6b6b6;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.news-link {
+ color: #3f51b5;
+ font-size: 24px;
+}
+
+/***********
+*   Container
+***************/
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
 }
