@@ -43,16 +43,11 @@ li {
 
 a {
   color: #ff4081;
+  transition: 0.2s ease-in-out;
 }
 
-a:active{
-
-}
-
-a:hover {
-
-}
-
+a:active,
+a:hover,
 a:focus {
  color: #212121;
 }
@@ -126,6 +121,38 @@ padding-bottom: 20px;
 	animation: flash 1.5s;
 }
 
+
+/***********
+*   Form
+***************/
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input {
+	border-bottom: 1px solid #b6b6b6;
+	border-radius: 4px;
+	padding:10px;
+	width:100%;
+	box-sizing: border-box;
+}
+
+.form {
+	margin-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+.form.is-visible {
+	opacity: 1;
+	visibility: visible;
+	height: auto;
+	transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
 
 
 /***********
